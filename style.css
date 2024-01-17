@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 10vh;
+}
+footer{
+    display: flex;
+    align-items: center;
+    height: 4vh;
+    margin: 5px 5px;
+}
+
+main{
+    background-color: #7FFFD4;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+header>div>img{
+    width: 60px;
+}
+
+#play{
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: smaller;
+}
+#griglia{
+    width: 65%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-easy{
+    border: 1px solid black;
+    flex-basis: calc( 100% / 10 );
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-medium{
+    border: 1px solid black;
+    flex-basis: calc( 100% / 9 );
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-hard{
+    border: 1px solid black;
+    flex-basis: calc( 100% / 7 );
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-easy>span{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.box-medium>span{
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.box-hard>span{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.active{
+    background-color: lightseagreen;
+}
+.gameOver{
+    background-color: red;
+    color: white;
+}
